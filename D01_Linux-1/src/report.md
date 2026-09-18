@@ -156,8 +156,6 @@ ps является очень гибким инструментом для оп
 ![/var/log/dmesg](img/14.1.jpg)
 ![/var/log/syslog](img/14.2.jpg)
 ![/var/log/auth.log](img/14.3.jpg)
- - Время последней успешной авторизации - 10 июля 16:08:22.
- - Имя пользователя - roslyncl.
  - Метод входа в систему - uid=0.
 - Перезапускаем службу SSHd комадой `systemctl restart sshd`.\
 ![/var/log/auth.log](img/14.4.jpg)
