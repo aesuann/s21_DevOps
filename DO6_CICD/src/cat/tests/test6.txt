@@ -1,0 +1,55 @@
+is 0 0 is 0 0
+
+    is 0 0 is 0 0
+\00\00\00\00 is 0 0		\00 is 0 0
+
+
+
+\00\00\00\00 is 0 0    \00 is 0 0
+ is 1 1		
+ is 2 2		
+ is 3 3		
+ is 4 4		
+ is 5 5		
+ is 6 6 is 7 7		
+ is 8 8 is 9 9
+
+    is 10 a
+
+        is 11 b is 12 c
+
+            is 13 d		
+ is 14 e		
+ is 15 f		
+ is 16 10		
+ is 17 11		
+ is 18 12		
+ is 19 13		
+ is 20 14		
+ is 21 15		
+ is 22 16		
+ is 23 17		
+ is 24 18		
+ is 25 19
+ is 26 1a		
+ is 27 1b		
+ is 28 1c		
+ is 29 1d		
+ is 30 1e		
+ is 31 1f		
+  is 32 20		
+! is 33 21		
+" is 34 22		
+# is 35 23		
+$ is 36 24		
+% is 37 25		
+& is 38 26		
+' is 39 27		
+( is 40 28		
+) is 41 29		
+* is 42 2a		
++ is 43 2b		
+, is 44 2c		
+- is 45 2d		
+. is 46 2e		
+/ is 47 2f		

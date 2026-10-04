@@ -1,0 +1,40 @@
+stages:
+  - style
+  - build
+  - test
+  - deploy
+
+check_style:
+  stage: style
+  script:
+    - clang-format --version
+    - find src -type f \( -name "*.c" -o -name "*.h" \) -exec clang-format -style=Google -n --Werror {} +
+
+build_simplebashutils:
+  stage: build
+  script:
+    - make -C src/cat
+    - make -C src/grep
+  artifacts:
+    paths:
+      - src/cat/s21_cat
+      - src/grep/s21_grep
+    expire_in: 30 days
+
+integration_tests:
+  stage: test
+  script:
+    - |
+      if make -C src/cat test && make -C src/grep test; then
+        echo "Integration tests PASSED"
+      else
+        echo "Integration tests FAILED"
+        exit 1
+      fi
+
+deploy_job:
+  stage: deploy
+  when: manual
+  allow_failure: false
+  script:
+    - bash deploy.sh
